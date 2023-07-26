@@ -40,9 +40,19 @@ const Colorlist = () => {
   const colorState = useSelector((state) => state.color.colors);
   const data1 = [];
   for (let i = 0; i < colorState.length; i++) {
+    const colorClass = `color-${colorState[i].color}`;
     data1.push({
       key: i + 1,
-      name: colorState[i].title,
+      name: (
+        <>
+          <div
+            className="color-icon"
+            style={{ backgroundColor: colorState[i].title }}
+          ></div>
+          {colorState[i].title}
+        </>
+      ),
+
       action: (
         <>
           <Link

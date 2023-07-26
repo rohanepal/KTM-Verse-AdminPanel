@@ -54,13 +54,14 @@ const Addproduct = () => {
       toast.error("Something Went Wrong!");
     }
   }, [isSuccess, isError, isLoading]);
-  const coloropt = [];
-  colorState.forEach((i) => {
-    coloropt.push({
-      label: i.title,
-      value: i._id,
-    });
-  });
+
+  const coloropt = colorState.map((color) => ({
+    label: (
+      <div className="color-icon" style={{ backgroundColor: color.title }}></div>
+    ),
+    value: color._id,
+  }));
+  
   const img = [];
   imgState.forEach((i) => {
     img.push({
