@@ -27,17 +27,23 @@ const MainLayout = () => {
   const navigate = useNavigate();
   return (
     <Layout /* onContextMenu={(e) => e.preventDefault()} */>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider 
+        trigger={null}
+        collapsible
+        collapsed={collapsed}
+        className="custom-menu"
+         >
         <div className="logo">
-          <h2 className="text-white fs-5 text-center py-3 mb-0">
-            <span className="sm-logo">Ktm-V</span>
-            <span className="lg-logo">Ktm-Verse</span>
+          <h2 className="text-light fs-5 text-center py-3 mb-0">
+            <span className="sm-logo">KV</span>
+            <span className="lg-logo">KTM-Verse</span>
           </h2>
         </div>
         <Menu
           theme="dark"
           mode="inline"
           defaultSelectedKeys={[""]}
+          className="custom-menu"
           onClick={({ key }) => {
             if (key === "signout") {
             } else {
@@ -132,6 +138,7 @@ const MainLayout = () => {
             },
           ]}
         />
+        
       </Sider>
       <Layout className="site-layout">
         <Header
@@ -149,12 +156,12 @@ const MainLayout = () => {
             }
           )}
           <div className="d-flex gap-4 align-items-center">
-            <div className="position-relative">
+            {/* <div className="position-relative">
               <IoIosNotifications className="fs-4" />
               <span className="badge bg-warning rounded-circle p-1 position-absolute">
                 3
               </span>
-            </div>
+            </div> */}
 
             <div className="d-flex gap-3 align-items-center dropdown">
               <div>

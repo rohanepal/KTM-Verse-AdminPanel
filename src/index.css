@@ -11,7 +11,7 @@ body {
 }
 
 .trigger:hover {
-  color: #1890ff;
+  color: #000306 !important;
 }
 
 .logo {
@@ -45,7 +45,7 @@ body {
   display: none;
 }
 .logo {
-  background-color: #ffd333;
+  background-color: #000b15 !important;;
   margin: 0;
   height: 64px;
 }
@@ -84,3 +84,36 @@ main::-webkit-scrollbar {
   margin-right: 8px;
   vertical-align: middle; /* To align the icon vertically with the text */
 }
+
+
+
+
+/* Change the background color of the menu and submenu items */
+.custom-menu {
+  background-color: #161616 !important;
+}
+
+/* Change the background color of the menu items */
+.custom-menu .ant-menu-item,
+.custom-menu .ant-menu-submenu-title {
+  background-color: #161616 !important;
+}
+
+/* Change the background color of the menu items on hover */
+.custom-menu .ant-menu-item:hover,
+.custom-menu .ant-menu-submenu-title:hover {
+  background-color: #161616 !important;
+}
+
+/* Change the background color of the selected menu items */
+.custom-menu .ant-menu-item-selected,
+.custom-menu .ant-menu-submenu-title-selected {
+  background-color: #161616 !important;
+}
+
+/* Change the background color of the selected submenu item */
+.custom-menu .ant-menu-submenu-popup .ant-menu-submenu-title-selected {
+  background-color: #161616 !important;
+}
+
+
