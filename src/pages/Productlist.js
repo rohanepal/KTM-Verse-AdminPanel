@@ -5,6 +5,8 @@ import { AiFillDelete } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../features/product/productSlice";
 import { Link } from "react-router-dom";
+import Color from "../components/Color"; // Import your Color component
+
 const columns = [
   {
     title: "SNo",
@@ -26,8 +28,8 @@ const columns = [
     sorter: (a, b) => a.category.length - b.category.length,
   },
   {
-    title: "Color",
-    dataIndex: "color",
+    title: "Quantity",
+    dataIndex: "quantity",
   },
   {
     title: "Price",
@@ -53,7 +55,8 @@ const Productlist = () => {
       title: productState[i].title,
       brand: productState[i].brand,
       category: productState[i].category,
-      color: productState[i].color,
+      quantity: productState[i].quantity,
+      
       price: `${productState[i].price}`,
       action: (
         <>

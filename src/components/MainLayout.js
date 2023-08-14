@@ -31,11 +31,11 @@ const MainLayout = () => {
         trigger={null}
         collapsible
         collapsed={collapsed}
-        className="custom-menu"
+
          >
         <div className="logo">
           <h2 className="text-light fs-5 text-center py-3 mb-0">
-            <span className="sm-logo">KV</span>
+            <span className="sm-logo">K/V</span>
             <span className="lg-logo">KTM-Verse</span>
           </h2>
         </div>
@@ -64,7 +64,9 @@ const MainLayout = () => {
             {
               key: "Catalog",
               icon: <AiOutlineShoppingCart className="fs-4" />,
+              className: "custom-menu", // Add custom class name here
               label: "Catalog",
+             
               children: [
                 {
                   key: "product",
@@ -73,6 +75,7 @@ const MainLayout = () => {
                 },
                 {
                   key: "list-product",
+                  
                   icon: <AiOutlineShoppingCart className="fs-4" />,
                   label: "Product List",
                 },

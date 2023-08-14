@@ -45,9 +45,9 @@ body {
   display: none;
 }
 .logo {
-  background-color: #000b15 !important;;
+  background-color: #1f1f1f !important;;
   margin: 0;
-  height: 64px;
+  height: 55px;
 }
 main {
   height: 85vh;
@@ -86,34 +86,47 @@ main::-webkit-scrollbar {
 }
 
 
-
-
 /* Change the background color of the menu and submenu items */
-.custom-menu {
+.ant-layout-sider
+{
   background-color: #161616 !important;
 }
 
+
+
 /* Change the background color of the menu items */
-.custom-menu .ant-menu-item,
-.custom-menu .ant-menu-submenu-title {
+.ant-menu-dark .ant-menu-item {
+  background-color: #161616 !important;
+}
+
+.ant-menu-dark .ant-menu-submenu-title {
+  background-color: #161616 !important;
+}
+.ant-menu-dark .ant-menu-inline {
   background-color: #161616 !important;
 }
 
 /* Change the background color of the menu items on hover */
-.custom-menu .ant-menu-item:hover,
-.custom-menu .ant-menu-submenu-title:hover {
-  background-color: #161616 !important;
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  background-color: #1f1f1f !important;
 }
 
 /* Change the background color of the selected menu items */
-.custom-menu .ant-menu-item-selected,
-.custom-menu .ant-menu-submenu-title-selected {
+.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-dark .ant-menu-submenu-title-selected {
+  background-color: #1f1f1f !important;
+}
+.ant-menu-dark .ant-menu-submenu-selected.ant-menu-sub  {
   background-color: #161616 !important;
 }
 
-/* Change the background color of the selected submenu item */
-.custom-menu .ant-menu-submenu-popup .ant-menu-submenu-title-selected {
+.ant-menu-dark .ant-menu .ant-menu-sub .ant-menu-inline {
   background-color: #161616 !important;
 }
 
+.custom-menu {
+  /* Add your styles here */
+  background-color: #161616 !important;
+}
 
